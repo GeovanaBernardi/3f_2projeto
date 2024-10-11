@@ -12,4 +12,9 @@ async function quantidadeDeUsuarios(){
             type: 'bar'
         }
     ]
+    const graficos = document.createElement('div');
+    graficos.className = 'graficos';
+    document.getElementById('graficos-container').appendChild(graficos);
+    Plotly.newPlot(graficos,infos);
 }
+ quantidadeDeUsuarios();
